@@ -1,0 +1,123 @@
+/*=============
+    Layout
+===============*/    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body,
+html {
+    height: 100%;
+}
+
+/*Logo*/  
+.page-title {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+
+/*Navbar*/
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Warning-URL*/
+.fallback-url{
+    padding-top: 25%;
+}
+
+
+/*==============
+    Typography
+===============*/    
+
+/*Paragraphs*/
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px 10px;
+}
+
+/*Warning message*/
+.warning-message{
+    font-family: 'Holtwood One SC', sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 25%;
+    color: red;
+}
+
+/*Fallback URL*/
+.fallback-url a{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+}
+
+/*==================
+     Media queries
+===================*/     
+
+@media (max-width:900px){
+
+    /*Title*/
+    .main-title {
+        position: absolute;
+        font-size: 50px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /*Navbar*/
+    .nav-list{
+    flex-direction: column;
+    margin: 0;
+    padding: 0;   
+    position: relative;
+    width: 100%;
+    }
+}

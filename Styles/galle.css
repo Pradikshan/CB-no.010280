@@ -1,0 +1,288 @@
+/*=============
+    Layout
+==============*/    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    position: relative;
+}
+
+html::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url(/images/Fort/background.webp);
+    background-size: cover;
+    opacity: 0.55;
+}
+
+.container{
+    display: flex;
+}
+
+/*Logo*/
+.page-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+  
+/*Navbar*/
+.navbar {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Main paragraph*/
+.main-para{
+    grid-column: 2/3;
+}
+
+/*Section 1*/
+.sec-1{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+}
+
+/*Links*/
+.anim-link{
+    border-bottom: 1px transparent;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+    font-size: xx-large;
+    margin: 0px 10px;
+    position: relative;
+}
+
+.animation-link{
+    padding-top: 100px;
+}
+
+/*Horizontal line*/
+hr{
+    margin: 20px 0;
+}
+
+/*Footer*/
+footer{
+    margin: 70px 0;
+    position: relative;
+}
+
+.social{
+    display: flex;
+    position: relative;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+/*===============
+      Color
+================*/
+
+/*Navbar*/
+.active{
+    background-color: rgb(214, 112, 16);
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(81, 81, 175);
+}
+
+
+/*==================
+     Typography
+====================*/
+
+/*Title*/
+.main-title{
+    font-family: 'Dancing Script', sans-serif;
+    text-align: center;
+    font-size: 60px;
+    color: rgb(0, 0, 0);
+    position: relative;
+    opacity: 1;
+}
+
+/*Headings*/
+h2{
+    font-family: 'Great Vibes', sans-serif;
+    position: relative;
+    margin: 5px 10px;
+    padding-top: 50px;
+}
+
+/*Paragraphs*/
+.main-para, p{
+    font-family: 'Courgette', sans-serif;
+    position: relative;
+    margin: 10px 10px;
+}
+
+
+/*=============
+    Images
+===============*/    
+
+/*Main image*/
+.main-img{
+  flex: 30%;
+  padding: 5px;
+  width: 100px;
+  max-width: 100%;
+  position: relative;
+}
+
+/*Secondary image*/
+.main-img2{
+    grid-column: 1/2;
+    width: 309px;
+    max-width: 100%;
+    position: relative;
+    margin: 10px 10px;
+}
+
+.main-img2:hover, 
+.main-img:hover{
+    opacity: 0.8;
+}
+
+/*Socila media icons*/
+.social img{
+    width: 50px;
+    margin: 10px 10px;
+}
+
+
+/*=============
+    Animation
+===============*/    
+.anim-link{
+    animation-name: y;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes y{
+    0%{color: rgb(253, 93, 0);}
+    25%{color: rgb(255, 251, 0);}
+    50%{color: rgb(0, 255, 149);}
+    75%{color: rgb(225, 0, 255);}
+    100%{color: rgb(253, 7, 60);}
+}
+
+
+/*==================
+     Media queries
+===================*/     
+
+@media (max-width:900px){
+    
+    /*Navbar*/
+    .nav-list{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;   
+        position: relative;
+        width: 100%;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Images*/
+    .main-img{
+        width: 500px;
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .main-img2{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Section 1*/
+    .sec-1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Heading*/
+    h2{
+        text-align: center;
+    }
+
+    /*Footer*/
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+}

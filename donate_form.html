@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTravel</title>
+
+    <link rel="stylesheet" href="/Styles/donate_form.css" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Asap|Lato|Dancing Script">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image.png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image.png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <div class="page-title">
+        <figure>
+            <img src="./images/Icons/travel.webp" class="logo">
+        </figure>
+        <p>PrimeTravel</p>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./homepage.html">Home</a></li>
+                <li><a href="./activities.html">Activities</a></li>
+                <li><a href="./attractions.html">Wildlife attractions</a></li>
+                <li><a href="./beaches.html">Beaches</a></li>
+                <li><a href="./heritage.html">Heritage locations</a></li>
+                <li><a href="./purchase.html" class="active">Purchase and donate</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+    <h1>DONATE HERE!</h1>
+
+    <section class="donate-form">
+        <div class="donate">
+            <form name="donateForm">
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" class="fname" name="fname" id="fname" required>
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" class="lname" name="lname" id="lname" required>
+                <br>
+                <label for="email">Email address:</label>
+                <br>
+                <input type="email" class="email" name="email" id="email" required>
+                <br>
+                <label for="city">City:</label>
+                <br>
+                <input type="text" class="city" name="city" id="city" required>
+                <br>
+                <label for="zip">Zip/Postal code:</label>
+                <br>
+                <input type="number" class="zip" name="zip" id="zip" min="0">
+                <br>
+                <label for="country">Country:</label>
+                <br>
+                <input type="text" class="country" name="country" id="country" required>
+                <br>
+                <label for="address">Address:</label>
+                <br>
+                <textarea id="address"></textarea>
+                <!--<input type="text" class="address" name="address" id="address" required>-->
+                <br>
+            </form>
+        </div>
+
+        <div class="payment">
+        <form>
+            <label for="amount">Select amount:</label>
+            <br>
+            <select class="donates" id="donates">
+                <option disabled selected hidden value="">Choose Donation Amount</option>
+                <option value="100">100LKR</option>
+                <option value="250">250LKR</option>
+                <option value="500">500LKR</option>
+                <option value="1000">1000LKR</option>
+                <option value="2500">2500LKR</option>
+                <option value="5000">5000LKR</option>
+                <option value="10000">10000LKR</option>
+            </select>
+            <br>
+            <label for="card">Card number:</label>
+            <br>
+            <input type="number" class="card" name="card" id="card" required min="0000000000000000">
+            <br>
+            <label for="payments">Payment type:</label>
+            <br>
+            <select class="types" id="types">
+                <option disabled selected hidden value="">Choose Payment Type</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Paypal">Paypal</option>
+                <option value="American">Express</option>
+                <option value="Discover">Discover</option>
+                <option value="JCB">JCB</option>
+            </select>
+            <br>
+            <label for="date">Expiration date:</label>
+            <br>
+            <!--<input type="text" placeholder="mm/yyyy" class="edate" name="edate" id="edate" required>-->
+            <input type="month" name="edate" id="edate" class="edate" min="2022-08" required>
+            <br>
+            <label for="code">Security code:</label>
+            <br>
+            <input type="text" id="code" name="code" class="code" placeholder="Last 3 digits on back of card" pattern="^[0-9]{3}$" required>
+            <!--<input type="number" class="code" name="code" id="code" min="000" max="999" required>-->
+            <br> 
+            <br>
+            <button type="submit" id="proceed">Proceed</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </form>   
+        </div>
+    </section>
+
+        <h2>PURCHASE HERE!</h2>
+
+        <div class="purchase">
+            <form id="purchase-form">
+            <div class="purchase-grid">
+            <div class="purchase-grid1">
+            <figure>
+                <img src="/images/Purchase/Gem.webp" alt="gems">
+            </figure>
+            <label for="gem">Gems : Price - LKR 1785000</label>
+            <br>
+            <input type="number" name="gem" id="gem-quantity">
+            </div>
+
+            <div class="purchase-grid2">
+            <figure>
+                <img src="/images/Purchase/tea.webp" alt="tea">
+            </figure>
+            <label for="tea">Tea : Price - LKR 5000</label>
+            <br>
+            <input type="number" name="tea" id="tea-quantity">
+            </div>
+
+            <div class="purchase-grid3">
+            <figure>
+                <img src="/images/Purchase/rasksha masks.webp" alt="masks">
+            </figure>
+            <label for="masks">Masks : Price - LKR 2000</label>
+            <br>           
+            <input type="number" name="mask" id="mask-quantity">
+            </div>
+
+            <div class="purchase-grid4">
+            <figure>
+                <img src="/images/Purchase/stick.jfif" alt="cinnamon sticks">
+            </figure>
+            <label for="sticks">Cinnamon : Price - LKR 9000</label> 
+            <br>          
+            <input type="number" name="stick" id="stick-quantity">
+            </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <button type="button" id="check">Check cost of order</button>
+            <button type="button" id="addFav">Add to favourites</button>
+            <button type="button" id="getFav">Order favourite</button>
+            <br>
+            <br>
+            <button type="submit" id="loyalty-button">Check available loyalty points</button>
+            </form>
+        </div>
+
+        
+        <p>Cost of current order:</p>
+        <div id="current-order-cost"><br/></div>
+        
+
+
+        <p>Available loyalty points:</p>
+        <div id="loyalty-display"><br></div>
+    
+
+    <footer>
+        <p>
+            Follow us on:
+        </p>
+    <div class="social">
+        <a href="https://www.facebook.com/home.php">
+            <figure>
+                <img src="./images/Icons/facebook.webp" alt="facebook">
+            </figure>
+        </a>
+        <a href="https://twitter.com/">
+            <figure>
+                <img src="./images/Icons/twitter.webp" alt="Twitter">
+            </figure>
+        </a>
+        <a href="https://www.reddit.com/login/">
+            <figure>
+                <img src="./images/Icons/reddit.webp" alt="Reddit">
+            </figure>
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+            <figure>
+                <img src="./images/Icons/instagram.webp" alt="Instagram">
+            </figure>
+        </a>
+        <a href="https://www.bing.com/videos/search?q=never+gonna+give+you+up&view=detail&mid=4E7B1C0F8E67E9F7B1364E7B1C0F8E67E9F7B136&FORM=VIRE" >
+            <figure>
+                <img src="./images/Icons/youtube.webp" alt="Youtube">
+            </figure>
+        </a>
+    </div>    
+    
+
+    <div class="terms">
+        <p class="terms-para">Travel Guidelines</p>
+        <p class="terms-para">Privacy Policy</p>
+        <p class="terms-para">Terms & Conditions</p>
+    </div>
+    </footer>
+
+    <script src="/Scripts/d_form.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

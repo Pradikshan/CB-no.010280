@@ -1,0 +1,284 @@
+/*================
+    Layout
+==================*/    
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body,
+html {
+    min-height: 100%;
+   
+}
+
+/*Logo*/
+.page-title {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+
+/*Navbar*/
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Heading*/
+h1,
+h2{
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*Donation form*/
+.donate-form{
+    display: grid;
+    grid-template-columns: 03;
+    padding: 20px 20px;
+}
+
+.donate{
+    grid-column: 1/2;
+}
+
+.payment{
+    grid-column: 2/3;
+}
+
+/*Purchase form*/
+.purchase label{
+    padding-left: 20px;
+}
+
+.purchase button{
+    margin-left: 20px;
+}
+
+.purchase-grid{
+    display: grid;
+    grid-template-columns: 3;
+}
+
+.purchase-grid1,
+.purchase-grid3{
+    grid-column: 1/2;
+}
+
+.purchase-grid2,
+.purchase-grid4{
+    grid-column: 2/3;
+}
+
+.purchase-grid input{
+    width: fit-content;
+}
+
+.purchase-grid1,
+.purchase-grid2,
+.purchase-grid3,
+.purchase-grid4{
+    padding: 20px 0;
+}
+
+.purchase-grid label,
+.purchase-grid input{
+    margin: 0px 20%;
+}
+
+/*Horizontal line*/
+hr{
+    margin: 20px 0;
+}
+
+/*Footer*/
+footer{
+    position: relative;
+    width: 100%;
+}
+
+.social{
+    display: flex;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/*=============
+   Colors
+==============*/   
+
+html{
+    background-color: rgba(230,202,191,255);
+}
+
+/*Navbar*/
+.active{
+    background-color: rgb(214, 112, 16);
+}
+
+/*Button*/
+button{
+    background-color: rgb(135, 240, 240);
+}
+
+button:hover{
+    background-color: greenyellow;
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(81, 81, 175);
+}
+
+/*==============
+    Typography
+===============*/    
+
+/*Paragraphs*/
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin: 10px 10px;
+}
+
+/*Heading*/
+h1,
+h2{
+    font-family: 'Quicksand', sans-serif;
+    
+}
+
+/*Donate form*/
+label,
+option,
+input,
+button,
+select{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bold;
+}
+
+/*=============
+    Images
+===============*/  
+
+/*Social media icons*/
+.social img{
+    width: 50px;
+    margin: 10px 10px;
+}
+
+.purchase img{
+    flex: 30%;
+    padding: 5px;
+    width: 550px;
+    height: 400px;
+    max-width: 100%;
+    border: 2px solid black;
+    margin: 0 5px;
+}
+/*==================
+     Media queries
+===================*/     
+
+@media (max-width:900px){
+    
+    /*Navbar*/
+    .nav-list{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;   
+        position: relative;
+        width: 100%;
+    }
+
+    /*Paragraphs*/  
+    p{
+        font-size: medium;  
+    }
+
+    /*Donation form*/
+    .donate-form{
+        display: block;
+    }
+
+    .donate{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .payment{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Purchase form*/
+    .purchase-grid{
+        display: block;
+    }
+    
+    .purchase-grid1,
+    .purchase-grid2,
+    .purchase-grid3,
+    .purchase-grid4{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    /*Footer*/
+    footer{
+        position: relative;
+        width: 100%;
+    }
+
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+}

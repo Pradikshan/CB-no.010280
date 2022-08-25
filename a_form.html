@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTravel</title>
+
+    <link rel="stylesheet" href="/Styles/a_form.css" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Asap|Lato|Dancing Script">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image.png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image.png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+
+<body>
+    <div class="page-title">
+        <figure>
+            <img src="./images/Icons/travel.webp" class="logo">
+        </figure>
+        <p>PrimeTravel</p>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./homepage.html">Home</a></li>
+                <li><a href="./activities.html"  class="active">Activities</a></li>
+                <li><a href="./attractions.html">Wildlife attractions</a></li>
+                <li><a href="./beaches.html">Beaches</a></li>
+                <li><a href="./heritage.html">Heritage locations</a></li>
+                <li><a href="./purchase.html">Purchase and donate</a></li>
+            </ul>
+            
+        </nav>            
+    </header>
+
+    <h1>ORDER YOUR TICKETS HERE!</h1>
+
+    <section class="info-form">
+        <div class="info">
+            <form>
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" class="fname" name="fname" id="fname" required>
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" class="lname" name="lname" id="lname" required>
+                <br>
+                <label for="email">Email address:</label>
+                <br>
+                <input type="email" class="email" name="email" id="email" required>
+                <br>
+                <label for="city">City:</label>
+                <br>
+                <input type="text" class="city" name="city" id="city" required>
+                <br>
+                <label for="zip">Zip/Postal code:</label>
+                <br>
+                <input type="number" class="zip" name="zip" id="zip">
+                <br>
+                <label for="country">Country:</label>
+                <br>
+                <input type="text" class="country" name="country" id="country" required>
+                <br>
+                <label for="address">Address:</label>
+                <br>
+                <textarea id="address"></textarea>
+                <br>
+            </form>
+        </div>
+
+        <div class="payment">
+        <form>
+            <label for="card">Card number:</label>
+            <br>
+            <input type="number" class="card" name="card" id="card" required min="0000000000000000">
+            <br>
+            <label for="payments">Payment type:</label>
+            <br>
+            <select class="types" id="types">
+                <option disabled selected hidden value="">Choose Payment Type</option>
+                <option value="Visa">Visa</option>
+                <option value="Mastercard">Mastercard</option>
+                <option value="Paypal">Paypal</option>
+                <option value="American">Express</option>
+                <option value="Discover">Discover</option>
+                <option value="JCB">JCB</option>
+            </select>
+            <br>
+            <label for="date">Expiration date:</label>
+            <br>
+            <input type="month" name="edate" id="edate" class="edate" min="2022-08" required>
+            <br>
+            <label for="code">Security code:</label>
+            <br>
+            <input type="text" id="code" name="code" class="code" placeholder="Last 3 digits on back of card" pattern="^[0-9]{3}$" required>
+            <br>
+        </form>
+        </div>
+    </section>
+    <hr>
+            
+    <section class="activity-form">
+        <div class="selection">
+            <form id="order-form">
+                <label for="ticket">Ticket type:</label>
+                <br>
+                <select id="ticket-type">
+                    <!--It is assumed that foreign children have to buy the foreign child pass regardless of their age while local children have to buy either the child15 or child06 pass depending on their age-->
+                    <option disabled selected hidden value="">Choose Ticket Type</option>
+                    <option value="local">Local Pass</option>
+                    <option value="foreign">Foreign Pass</option>
+                    <option value="foreignChild">Foreign Pass (Child)</option>
+                    <option value="child15">Child Pass (children below 15yrs of age)</option>
+                    <option value="child06">Child Pass (children below 06yrs of age)</option>
+                </select>
+                <br>
+                <br>
+                <label for="quantity">Quantity:</label>
+                <br>
+                <input type="number" name="quantity" id="quantity" required/>
+                <br>
+                <br>
+                <label for="duration">Duration:</label>
+                <br>
+                <select id="duration">
+                    <option disabled selected hidden value="">Choose Duration</option>
+                    <option value="3 hours">3 hours</option>
+                    <option value="1/2 day">1/2 day</option>
+                    <option value="1 day">1 day</option>
+                    <option value="2 days">2 days</option>
+                </select>
+                <br>
+                <br>
+                <label for="extra">Extra:</label>
+                <br>
+                <select id="extra">
+                    <option disabled selected hidden value="">Choose Extra Option</option>
+                    <option value="Annual_Pass">Annual Pass</option>
+                    <option value="Food_Pass">Food Pass</option>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <button type="submit">Add to order</button>
+                <button type="submit" id="place-order">Place order</button>
+            </form>
+        </div>
+
+        <div class="display-area">
+            <p>Current order(s):</p>
+            <div id="current-order-field">
+                <div id="current-order-type"><br/></div>
+                <div id="current-order-quantity"><br/></div>
+                <div id="current-order-duration"><br/></div>
+                <div id="current-order-extra"><br/></div>
+            </div>
+            <p>Cost of current order(s):</p>
+            <div id="current-order-cost"><br/></div>
+            <p>Overall order(s):</p>
+            <ul id="overall-order-field"></ul>
+            <p>Overall cost of order(s):</p>
+            <div id="overall-order-cost"><br/></div>
+        </div>
+    </section>
+
+    <!--<div id="message"><br></div>-->
+
+    <hr>
+
+    <footer>
+        <p>
+            Follow us on:
+        </p>
+    <div class="social">
+        <a href="https://www.facebook.com/home.php">
+            <figure>
+                <img src="./images/Icons/facebook.webp" alt="facebook">
+            </figure>
+        </a>
+        <a href="https://twitter.com/">
+            <figure>
+                <img src="./images/Icons/twitter.webp" alt="Twitter">
+            </figure>
+        </a>
+        <a href="https://www.reddit.com/login/">
+            <figure>
+                <img src="./images/Icons/reddit.webp" alt="Reddit">
+            </figure>
+        </a>
+        <a href="https://www.instagram.com/accounts/login/">
+            <figure>
+                <img src="./images/Icons/instagram.webp" alt="Instagram">
+            </figure>
+        </a>
+        <a href="https://www.bing.com/videos/search?q=never+gonna+give+you+up&view=detail&mid=4E7B1C0F8E67E9F7B1364E7B1C0F8E67E9F7B136&FORM=VIRE" >
+            <figure>
+                <img src="./images/Icons/youtube.webp" alt="Youtube">
+            </figure>
+        </a>
+    </div>    
+
+    <div class="terms">
+        <p class="terms-para">Travel Guidelines</p>
+        <p class="terms-para">Privacy Policy</p>
+        <p class="terms-para">Terms & Conditions</p>
+    </div>
+    </footer>
+
+    <script src="/Scripts/pass.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

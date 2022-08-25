@@ -1,0 +1,244 @@
+/*==============
+      Layout
+================*/        
+html{
+    height: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+/*Logo*/
+.page-title {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+
+/*Navbar*/
+.navbar {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Images*/
+.container{
+    display: grid;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+}
+
+/*Links*/
+.animation-link{
+    padding-top: 100px;
+}
+
+/*Footer*/
+footer{
+    margin: 70px 0;
+    position: relative;
+}
+
+.social{
+    display: flex;
+    position: relative;
+}
+
+
+/*==============
+  Typography
+===============*/  
+
+/*Title*/
+.main-title{
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: gold;
+    margin-top: 50px;
+}
+
+/*Heading*/
+h2,
+h3{
+    font-family: 'Jost', sans-serif;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/*Paragraph*/
+p{
+    font-family: 'Tajawal', sans-serif;
+    margin: 10px 10px;
+}
+
+/*Links*/
+.anim-link{
+    border-bottom: 1px transparent;
+    text-decoration: none;
+    font-family: 'Asap', sans-serif;
+    font-size: xx-large;
+    margin: 0px 10px;
+}
+
+
+/*===========
+    Colors
+=============*/
+
+/*Navbar*/
+.active{
+    background-color: rgb(214, 112, 16);
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(81, 81, 175);
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+/*==============
+     Images
+================*/
+
+/*Main image*/
+.main-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    max-width: 100%;    
+}
+
+/*Secondary image*/
+.main-img2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+/*Tertiary image*/
+.main-img3{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 200px;
+    max-width: 100%;
+}
+
+.main-img:hover, 
+.main-img2:hover, 
+.main-img3:hover{
+    opacity: 0.8;
+}
+
+/*Socila media icons*/
+.social img{
+    width: 50px;
+    margin: 10px 10px;
+}
+
+/*=================
+    Animation
+==================*/    
+
+.anim-link{
+    animation-name: z;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes z{
+    0%{color: rgb(5, 255, 25);}
+    25%{color: rgb(255, 251, 0);}
+    50%{color: rgb(0, 255, 149);}
+    75%{color: rgb(225, 0, 255);}
+    100%{color: rgb(0, 96, 134);}
+}
+
+/*==================
+     Media queries
+===================*/     
+
+@media (max-width:900px){
+
+     /*Navbar*/
+     .nav-list{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;   
+        position: relative;
+        width: 100%;
+    }
+
+    /*Images*/
+    .main-img2, .main-img3{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+

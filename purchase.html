@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrimeTravel</title>
+
+    <link rel="stylesheet" href="/Styles/purchase.css" type="text/css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto Sans|Quicksand|Asap|Lato|Dancing Script">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image.png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image.png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+</head>
+<body>
+    <div class="page-title">
+        <figure>
+            <img src="./images/Icons/travel.webp" class="logo">
+        </figure>
+        <p>PrimeTravel</p>
+    </div>
+
+    <header class="navbar">
+        <nav>
+            <ul class="nav-list">
+                <li><a href="./homepage.html">Home</a></li>
+                <li><a href="./activities.html">Activities</a></li>
+                <li><a href="./attractions.html">Wildlife attractions</a></li>
+                <li><a href="./beaches.html">Beaches</a></li>
+                <li><a href="./heritage.html">Heritage locations</a></li>
+                <li><a href="./purchase.html" class="active">Purchase and donate</a></li>
+            </ul>
+            <h1 class="main-title">Purchase and Donate</h1>
+        </nav>            
+    </header>
+
+    <section class="content">
+        <p class="main-para">
+            There are many opportunities and venues for a tourist to help our wonderful nation. 
+            <br>
+            <br>
+            You can purchase locally made products such as the authentic Sri Lankan tea, ayurvedic products, and exotic gems among other things.
+            <br>
+            You can even help preserve Sri Lanka's heritage locations and wildlife attractions by making a generous donation by visiting links of the website featured below, or you can make a donation directly through us.
+        </p>
+
+        <h2>Purchase</h2>
+        <section class="hyperlink">
+            <section class="hyperlink1">
+                <a href="https://www.gemsinsrilanka.com/">
+                    <figure>
+                        <img src="./images/Purchase/Gem.webp" alt="Gems" class="hyperlink-img">
+                    </figure>    
+                </a>
+                <p class="hyperlink-title">Gems</p>
+            </section>
+
+            <section class="hyperlink1">
+                <a href="https://www.houseofgifts.lk/">
+                    <figure>
+                        <img src="./images/Purchase/rasksha masks.webp" alt="Raksha mask" class="hyperlink-img">
+                    </figure>   
+                </a>
+                <p class="hyperlink-title">Souvenirs</p> 
+            </section>
+
+            <section class="hyperlink1">
+                <a href="https://www.northern-tea.com/shop/tea/by-origin/sri-lankan-teas/">
+                    <figure>
+                        <img src="./images/Purchase/tea.webp" alt="Tea" class="hyperlink-img">
+                    </figure>
+                </a>
+                <p class="hyperlink-title">Tea</p>
+            </section>
+        </section>
+
+        <h2>Donate</h2>
+        <section class="hyperlink">
+            <section class="hyperlink1">
+                <a href="https://sridaladamaligawa.lk/donation/">
+                    <figure>
+                        <img src="./images/Purchase/Maligawa.webp" alt="Maligawa" class="hyperlink-img">
+                    </figure>
+                </a>
+                <p class="hyperlink-title">Sri Dalada Maligawa</p>
+            </section>
+
+            <section class="hyperlink1">
+                <a href="https://nationalzoo.gov.lk/animal-adoptions/#">
+                    <figure>
+                        <img src="./images/Purchase/Dehiwala_Zoo_Museum.webp" alt="Dehiwala Zoo" class="hyperlink-img">
+                    </figure>   
+                </a>
+                <p class="hyperlink-title">Dehiwala Zoo</p> 
+            </section>
+
+            <section class="hyperlink1">
+                <a href="https://otarafoundation.com/">
+                    <figure>
+                        <img src="./images/Purchase/emabark.webp" alt="OT Foundation" class="hyperlink-img">
+                    </figure>
+                </a>
+                <p class="hyperlink-title">Otara Foundation</p>
+            </section>
+        </section>
+
+        
+        <section class="donation-form">
+            <div class="info">
+            <h3>Donor Infomation</h3>
+            <form>
+                <label for="fname">First name:</label>
+                <br>
+                <input type="text" class="fname" name="fname">
+                <br>
+                <label for="lname">Last name:</label>
+                <br>
+                <input type="text" class="lname" name="lname">
+                <br>
+                <label for="email">Email address:</label>
+                <br>
+                <input type="text" class="email" name="email">
+                <br>
+                <label for="city">City:</label>
+                <br>
+                <input type="text" class="city" name="city">
+                <br>
+                <label for="lname">Zip/Postal code:</label>
+                <br>
+                <input type="text" class="zip" name="zip">
+                <br>
+                <label for="fname">Country:</label>
+                <br>
+                <input type="text" class="country" name="country">
+                <br>
+                <label for="fname">Address:</label>
+                <br>
+                <input type="text" class="address" name="address">
+                <br>
+            </form>
+            </div>
+
+            <div class="payment">
+            <h3>Payment Info</h3>
+            <form>
+                <label for="amount">Amount:</label>
+                <br>
+                <input type="text" class="amount" name="amount">
+                <br>
+                <label for="card">Card number:</label>
+                <br>
+                <input type="text" class="card" name="card">
+                <br>
+                <label for="payments">Select a payment type:</label>
+                <br>
+                <select class="types">
+                    <option value="Visa">Visa</option>
+                    <option value="Mastercard">Mastercard</option>
+                    <option value="Paypal">Paypal</option>
+                    <option value="American">Express</option>
+                    <option value="Discover">Discover</option>
+                    <option value="JCB">JCB</option>
+                </select>
+                <br>
+                <label for="date">Expiration date:</label>
+                <br>
+                <input type="text" class="edate" name="edate">
+                <br>
+                <label for="code">Security code:</label>
+                <br>
+                <input type="text" class="code" name="code">
+                <br>
+                <br>
+                <button type="button">Proceed</button>
+            </form>   
+            </div>
+
+            
+        </section>
+    </section>
+
+    <div class="link-d">
+        <a href="/donate_form.html" class="d-link">You can donate directly by clicking here!</a>
+    </div>
+
+    
+        <footer>
+            <p>
+                Follow us on:
+            </p>
+        <div class="social">
+            <a href="https://www.facebook.com/home.php">
+                <figure>
+                    <img src="./images/Icons/facebook.webp" alt="facebook">
+                </figure>
+            </a>
+            <a href="https://twitter.com/">
+                <figure>
+                    <img src="./images/Icons/twitter.webp" alt="Twitter">
+                </figure>
+            </a>
+            <a href="https://www.reddit.com/login/">
+                <figure>
+                    <img src="./images/Icons/reddit.webp" alt="Reddit">
+                </figure>
+            </a>
+            <a href="https://www.instagram.com/accounts/login/">
+                <figure>
+                    <img src="./images/Icons/instagram.webp" alt="Instagram">
+                </figure>
+            </a>
+            <a href="https://www.bing.com/videos/search?q=never+gonna+give+you+up&view=detail&mid=4E7B1C0F8E67E9F7B1364E7B1C0F8E67E9F7B136&FORM=VIRE" >
+                <figure>
+                    <img src="./images/Icons/youtube.webp" alt="Youtube">
+                </figure>
+            </a>
+        </div>  
+        
+        <div class="terms">
+            <p class="terms-para">Travel Guidelines</p>
+            <p class="terms-para">Privacy Policy</p>
+            <p class="terms-para">Terms & Conditions</p>
+        </div>
+        </footer>
+        <script src="./main.js"></script>
+    
+    
+</body>
+</html>

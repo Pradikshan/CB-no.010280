@@ -1,0 +1,403 @@
+/*================
+    Layout
+================*/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body,
+html {
+    height: 100%;
+}
+  
+/*Logo*/
+.page-title {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+
+/*Navbar*/
+.navbar {
+    position: relative;
+    max-width: 100%;
+    background-image: url(/images/Attractions/header.webp);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Iframe*/
+iframe{
+    width: 250px;
+    height: 250px;
+    margin: 0px 10px;
+    grid-column: 1/2;
+}
+
+/*Iframe paragraphs*/
+.iframe-para{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 1;
+    padding-top: 50px;    
+}
+
+hr{
+    margin: 20px 0;
+}
+
+/*Footer*/
+footer{
+    margin: 70px 0;
+}
+
+.social{
+    display: flex;
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+/*===========
+    Colors
+============*/    
+
+html{
+    background-color: #d4dc55;
+}
+
+/*Navbar*/
+.active{
+    background-color: rgb(214, 112, 16);
+}
+
+/*Footer*/
+footer{
+    background-color: rgb(81, 81, 175);
+}
+
+/*===============
+    Typography
+================*/
+
+/*Title*/
+.main-title {
+    font-family: 'Dancing Script', sans-serif;
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: greenyellow;
+}
+
+/*Headings*/
+h2{
+    font-family: 'Asap', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+h3{
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+h4{
+    font-family: 'Asap', sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-bottom: -40px;
+    margin-top: 40px;
+    
+}
+
+/*Paragraphs*/
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0 10px;
+}
+
+.main-para{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    margin-top: 50px;
+    
+}
+
+.main-para2{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    grid-column: 2/3;
+    margin: 0 10px;
+}
+
+.main-para3{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;;
+    font-weight: bolder;
+    margin: 0 10px;
+    grid-column: 2/3;
+}
+
+/*Attractions links*/
+.link{
+    font-family: 'Asap', sans-serif;
+    border-bottom: 1px transparent;
+    text-decoration: none;
+    margin: 10px 10px;
+    font-style: oblique;
+}
+
+/*=============
+    Images
+==============*/
+.main-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 900px;
+    max-width: 100%;
+}
+
+.main-img2{
+    width: 300px;
+    max-width: 100%;   
+    margin: 0px 10px;
+    grid-column: 1/2;
+}
+
+/*Socila media icons*/
+.social img{
+    width: 50px;
+    margin: 10px 10px;
+}
+
+
+/*=============
+    Table
+==============*/
+
+/*Table layout*/
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 4px solid black;
+    margin: 40px 0px;
+}
+
+thead th:nth-child(1){
+    width:10%
+}
+
+thead th:nth-child(2){
+    width:20%
+}
+
+thead th:nth-child(3){
+    width:10%
+}
+
+thead th:nth-child(4){
+    width:20%
+}
+
+thead th:nth-child(5){
+    width:20%
+}
+
+thead th:nth-child(6){
+    width:20%
+}
+
+th, td{
+    
+    border: 2px solid black;
+}
+
+.table-data{
+    width: 1%;
+    white-space: nowrap;
+}
+
+/*Table typography*/
+th{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: medium;
+    position: relative;
+    font-weight: bolder;
+    padding: 5px;
+}
+
+td{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: x-small;
+    font-weight: bold;
+    padding: 2px;
+}
+
+.center{
+    text-align: center;
+}
+
+tfoot td{
+    border: none;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: xx-small;
+    font-weight: bold;
+    color: #666;
+    padding: 5px;
+    letter-spacing: 1px;
+}
+
+/*Table images*/
+.main-img3{
+    width: 250px;
+    max-width: 100%;
+}
+
+
+/*=============
+Media queries
+=============*/
+
+@media (max-width:950px){
+
+    /*Title*/
+    .main-title {
+        position: absolute;
+        font-size: 50px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    
+    /*Navbar*/
+    .nav-list{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;   
+        position: relative;
+        width: 100%;
+    }
+
+    /*Paragraphs*/
+    p,
+    .main-para2,
+    .main-para3
+    {
+        margin: 0 8px;
+        font-size: medium;
+    }
+
+    .main-para{
+        margin: 20px 0;
+        font-size: medium;
+    }
+
+    /*Headings*/
+    h2{
+        font-size: 40px;
+    }
+
+    /*Links*/
+    .link{
+        margin: 0 8px;
+    }
+
+    /*Layout*/
+    .iframe-para{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .map{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /*Table*/
+    .tables{
+        display: flex;
+        flex-direction: column;
+    }
+
+    th{
+        font-size: xx-small;
+        word-wrap: break-word;
+    
+    }
+
+    td{
+        font-size: xx-small;
+        word-wrap: break-word;
+    }
+
+    /*Footer*/
+    .social{
+        display: flex;
+        justify-content: space-between;
+    }
+}

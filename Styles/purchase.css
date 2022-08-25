@@ -1,0 +1,278 @@
+/*==============
+     Layout
+===============*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  
+body,
+html {
+    height: 100%;
+}
+
+.main-para{
+    margin-top: 50px;
+}
+
+/*Logo*/
+.page-title {
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+  
+.page-title img {
+    width: 50px;
+}
+  
+.page-title p {
+    color: white;
+    text-align: center;
+}
+
+/*Navbar*/
+
+.navbar {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    background-image: url(/images/Purchase/Header.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+  
+.nav-list {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 1);
+    position: relative;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+  
+.nav-list a {
+    padding: 20px 0;
+}
+  
+.nav-list li,
+.nav-list a {
+    width: 100%;
+    height: 100%;
+}
+  
+.nav-list a {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: transparent 1px;
+    color: beige;
+}
+
+.navbar a:hover{
+    background-color: rgb(94, 107, 87);
+}
+
+/*Image as hyperlink*/
+
+.hyperlink{
+    display: flex;
+}
+      
+.hyperlink-img{
+    flex: 30%;
+    padding: 5px;
+    width: 550px;
+    height: 400px;
+    max-width: 100%;
+    border: 2px solid black;
+    margin: 0 5px;
+
+}
+
+.hyperlink-img:hover{
+    opacity: 0.75;
+}
+
+.hyperlink-title{
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: x-large;
+    position: relative;
+    text-align: center;
+}
+
+/*Forms*/
+
+.donation-form{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: rgb(194, 45, 45);
+}
+
+.info, .payment{
+    margin: 20px 0;
+}
+
+/*Footer*/
+
+.social{
+    display: flex;
+}
+
+.social img{
+    width: 50px;
+    margin: 10px 10px;
+}
+
+
+
+/*==================
+      Colors
+===================*/
+
+/*Navbar*/
+.active{
+    background-color: rgb(214, 112, 16);
+}
+
+/*Footer*/
+footer{
+    margin: 70px 0;
+    background-color: rgb(81, 81, 175);
+}
+
+.terms{
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+/*==================
+     Typography
+==================*/
+
+/*Title*/
+.main-title {
+    font-family: 'Dancing Script', sans-serif;
+    text-align: center;
+    position: absolute;
+    font-size: 50px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(78, 8, 170);
+}
+
+/*Paragraphs*/
+p{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bold;   
+    margin: 0px 10px;
+}
+
+/*Headings*/
+h2{
+    font-family: 'Asap', sans-serif;
+    font-size: 50px;
+    text-align: center; 
+    padding-top: 100px;  
+}
+
+/*Forms*/
+h3{
+    font-family: 'Asap', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*Form link*/
+.d-link{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;
+}
+
+label{
+    font-family: 'Quicksand', sans-serif;
+    font-size: large;
+    font-weight: bolder;   
+}
+
+button{
+    font-family: 'Quicksand', sans-serif;
+    font-size: medium;
+    font-weight: bold;   
+}
+
+/*================
+     Media queries
+==================*/     
+
+@media (max-width:900px){
+    
+     /*Title*/
+    .main-title {
+        font-family: 'Dancing Script', sans-serif;
+        text-align: center;
+        position: absolute;
+        font-size: 50px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: rgb(78, 8, 170);
+    }
+     
+     /*Navbar*/
+     .nav-list{
+        flex-direction: column;
+        margin: 0;
+        padding: 0;   
+        position: relative;
+        width: 100%;
+    }
+    /*Headings*/
+    h2{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 35px;
+    }
+    /*Paragraphs*/ 
+    p{
+        font-size: medium;  
+        margin: 0px 8px;
+    }
+    
+    /*Image as hyperlink*/
+    .hyperlink{
+        flex-direction: column;
+    }
+    
+    /*Form*/
+    .donation-form{
+        flex-direction: column;
+    }
+
+    label, button, select{
+        margin: 8px 8px;
+    }
+
+    input{
+        margin: 0px 8px;
+    }
+}
+
+
