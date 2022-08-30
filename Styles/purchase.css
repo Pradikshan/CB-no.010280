@@ -41,7 +41,7 @@ html {
     position: relative;
     max-width: 100%;
     height: 100%;
-    background-image: url(/images/Purchase/Header.webp);
+    background-image: url(./images/Purchase/Header.webp);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
