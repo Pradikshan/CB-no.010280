@@ -34,7 +34,7 @@ html {
 .navbar {
     position: relative;
     max-width: 100%;
-    background-image: url(/images/Heritage/Background.webp);
+    background-image: url(./images/Heritage/Background.webp);
     height: 100%;
     background-size: cover;
     background-position: center;
