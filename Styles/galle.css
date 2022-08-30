@@ -18,7 +18,7 @@ html::before{
     right: 0px;
     bottom: 0px;
     left: 0px;
-    background-image: url(/images/Fort/background.webp);
+    background-image: url(./images/Fort/background.webp);
     background-size: cover;
     opacity: 0.55;
 }
